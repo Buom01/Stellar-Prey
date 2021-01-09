@@ -27,7 +27,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#include <GUI/gui_precompiled.h>
+#include <GUI/gui_precompiled.hpp>
 
 extern bool g_waitingForKey;
 extern bool g_editingField;

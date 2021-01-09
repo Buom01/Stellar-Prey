@@ -70,8 +70,8 @@ set( MOUNT_DIR ${CMAKE_SOURCE_DIR}/../OpenWolf-Engine/src/engine )
 set( LIB_DIR ${CMAKE_SOURCE_DIR}/libs )
 set( TREMGAME_DIR ${CMAKE_SOURCE_DIR}/src/gameLogics )
 
-message(STATUS "writing ${MOUNT_DIR}/framework/appConfig.h")
-CONFIGURE_FILE("cmake/appConfig.h.in" "${MOUNT_DIR}/framework/appConfig.h" @ONLY)
+message(STATUS "writing ${MOUNT_DIR}/framework/appConfig.hpp")
+CONFIGURE_FILE("cmake/appConfig.h.in" "${MOUNT_DIR}/framework/appConfig.hpp" @ONLY)
 
 find_package( PkgConfig )
 
@@ -104,8 +104,8 @@ endif()
 ######################
 
 set( SHAREDLIST_HEADERS
-	${MOUNT_DIR}/qcommon/q_platform.h
-	${MOUNT_DIR}/qcommon/q_shared.h
+	${MOUNT_DIR}/qcommon/q_platform.hpp
+	${MOUNT_DIR}/qcommon/q_shared.hpp
 )
 
 set( SHAREDLIST_SOURCES
@@ -114,28 +114,28 @@ set( SHAREDLIST_SOURCES
 )
 
 set( GUI_HEADERS 
-	${MOUNT_DIR}/framework/appConfig.h
-	${MOUNT_DIR}/framework/types.h
-	${MOUNT_DIR}/API/cm_api.h
-	${MOUNT_DIR}/API/CmdBuffer_api.h
-	${MOUNT_DIR}/API/CmdSystem_api.h
-	${MOUNT_DIR}/API/system_api.h
-	${MOUNT_DIR}/API/clientLAN_api.h
-	${MOUNT_DIR}/API/clientGUI_api.h
-	${MOUNT_DIR}/API/renderer_api.h
-	${MOUNT_DIR}/API/sound_api.h
-	${MOUNT_DIR}/API/FileSystem_api.h
-	${MOUNT_DIR}/API/CVarSystem_api.h
-	${MOUNT_DIR}/GPURenderer/r_types.h
-	${MOUNT_DIR}/API/bgame_api.h
-	${MOUNT_DIR}/API/gui_api.h
-	${MOUNT_DIR}/API/cgame_api.h
-	${MOUNT_DIR}/API/Parse_api.h
+	${MOUNT_DIR}/framework/appConfig.hpp
+	${MOUNT_DIR}/framework/types.hpp
+	${MOUNT_DIR}/API/cm_api.hpp
+	${MOUNT_DIR}/API/CmdBuffer_api.hpp
+	${MOUNT_DIR}/API/CmdSystem_api.hpp
+	${MOUNT_DIR}/API/system_api.hpp
+	${MOUNT_DIR}/API/clientLAN_api.hpp
+	${MOUNT_DIR}/API/clientGUI_api.hpp
+	${MOUNT_DIR}/API/renderer_api.hpp
+	${MOUNT_DIR}/API/sound_api.hpp
+	${MOUNT_DIR}/API/FileSystem_api.hpp
+	${MOUNT_DIR}/API/CVarSystem_api.hpp
+	${MOUNT_DIR}/GPURenderer/r_types.hpp
+	${MOUNT_DIR}/API/bgame_api.hpp
+	${MOUNT_DIR}/API/gui_api.hpp
+	${MOUNT_DIR}/API/cgame_api.hpp
+	${MOUNT_DIR}/API/Parse_api.hpp
 	${TREMGAME_DIR}/GUI/gui_local.h
 	${TREMGAME_DIR}/GUI/gui_shared.h
 	${TREMGAME_DIR}/GUI/keycodes.h
 	${TREMGAME_DIR}/GUI/menudef.h
-	${TREMGAME_DIR}/GUI/gui_precompiled.h
+	${TREMGAME_DIR}/GUI/gui_precompiled.hpp
 )
 
 set( GUI_SOURCES
@@ -153,28 +153,28 @@ set( GUI_SOURCES
 )
 
 set( SGAMELIST_HEADERS
-	${MOUNT_DIR}/framework/appConfig.h
-	${MOUNT_DIR}/qcommon/qfiles.h
-	${MOUNT_DIR}/API/cm_api.h
-	${MOUNT_DIR}/API/serverGame_api.h
-	${MOUNT_DIR}/API/serverWorld_api.h
-	${MOUNT_DIR}/API/serverInit_api.h
-	${MOUNT_DIR}/API/CmdBuffer_api.h
-	${MOUNT_DIR}/API/CmdSystem_api.h
-	${MOUNT_DIR}/API/serverDemo_api.h
-	${MOUNT_DIR}/API/system_api.h
-	${MOUNT_DIR}/API/sound_api.h
-	${MOUNT_DIR}/API/FileSystem_api.h
-	${MOUNT_DIR}/API/CVarSystem_api.h
-	${MOUNT_DIR}/API/serverMain_api.h
-	${MOUNT_DIR}/API/Parse_api.h
+	${MOUNT_DIR}/framework/appConfig.hpp
+	${MOUNT_DIR}/qcommon/qfiles.hpp
+	${MOUNT_DIR}/API/cm_api.hpp
+	${MOUNT_DIR}/API/serverGame_api.hpp
+	${MOUNT_DIR}/API/serverWorld_api.hpp
+	${MOUNT_DIR}/API/serverInit_api.hpp
+	${MOUNT_DIR}/API/CmdBuffer_api.hpp
+	${MOUNT_DIR}/API/CmdSystem_api.hpp
+	${MOUNT_DIR}/API/serverDemo_api.hpp
+	${MOUNT_DIR}/API/system_api.hpp
+	${MOUNT_DIR}/API/sound_api.hpp
+	${MOUNT_DIR}/API/FileSystem_api.hpp
+	${MOUNT_DIR}/API/CVarSystem_api.hpp
+	${MOUNT_DIR}/API/serverMain_api.hpp
+	${MOUNT_DIR}/API/Parse_api.hpp
 	${TREMGAME_DIR}/sgame/sgame_precompiled.h
 	${TREMGAME_DIR}/bgame/bgame_local.h
-	${MOUNT_DIR}/API/bgame_api.h
+	${MOUNT_DIR}/API/bgame_api.hpp
 	${TREMGAME_DIR}/sgame/sgame_admin.h
 	${TREMGAME_DIR}/sgame/sgame_local.h
-	${MOUNT_DIR}/framework/SurfaceFlags_Tech3.h
-	${MOUNT_DIR}/API/sgame_api.h
+	${MOUNT_DIR}/framework/SurfaceFlags_Tech3.hpp
+	${MOUNT_DIR}/API/sgame_api.hpp
 	${TREMGAME_DIR}/sgame/tremulous.h
 	${TREMGAME_DIR}/sgame/sgame_active.h
 	${TREMGAME_DIR}/sgame/sgame_buildable.h
@@ -232,30 +232,30 @@ set( SGAMELIST_SOURCES
 )
 
 set( CGAMELIST_HEADERS
-	${MOUNT_DIR}/framework/appConfig.h
-	${MOUNT_DIR}/framework/types.h
-	${MOUNT_DIR}/framework/keycodes.h
-	${MOUNT_DIR}/framework/SurfaceFlags_Tech3.h
-	${MOUNT_DIR}/API/cm_api.h
-	${MOUNT_DIR}/API/CmdBuffer_api.h
-	${MOUNT_DIR}/API/CmdSystem_api.h
-	${MOUNT_DIR}/API/system_api.h
-	${MOUNT_DIR}/API/clientGame_api.h
-	${MOUNT_DIR}/API/clientLAN_api.h
-	${MOUNT_DIR}/API/clientGUI_api.h
-	${MOUNT_DIR}/API/renderer_api.h
-	${MOUNT_DIR}/API/sound_api.h
-	${MOUNT_DIR}/API/FileSystem_api.h
-	${MOUNT_DIR}/API/CVarSystem_api.h
-	${MOUNT_DIR}/API/cgame_api.h
-	${MOUNT_DIR}/API/Parse_api.h
+	${MOUNT_DIR}/framework/appConfig.hpp
+	${MOUNT_DIR}/framework/types.hpp
+	${MOUNT_DIR}/framework/keycodes.hpp
+	${MOUNT_DIR}/framework/SurfaceFlags_Tech3.hpp
+	${MOUNT_DIR}/API/cm_api.hpp
+	${MOUNT_DIR}/API/CmdBuffer_api.hpp
+	${MOUNT_DIR}/API/CmdSystem_api.hpp
+	${MOUNT_DIR}/API/system_api.hpp
+	${MOUNT_DIR}/API/clientGame_api.hpp
+	${MOUNT_DIR}/API/clientLAN_api.hpp
+	${MOUNT_DIR}/API/clientGUI_api.hpp
+	${MOUNT_DIR}/API/renderer_api.hpp
+	${MOUNT_DIR}/API/sound_api.hpp
+	${MOUNT_DIR}/API/FileSystem_api.hpp
+	${MOUNT_DIR}/API/CVarSystem_api.hpp
+	${MOUNT_DIR}/API/cgame_api.hpp
+	${MOUNT_DIR}/API/Parse_api.hpp
 	${TREMGAME_DIR}/GUI/menudef.h
-	${MOUNT_DIR}/API/bgame_api.h
+	${MOUNT_DIR}/API/bgame_api.hpp
 	${TREMGAME_DIR}/GUI/gui_shared.h
-	${MOUNT_DIR}/GPURenderer/r_types.h
+	${MOUNT_DIR}/GPURenderer/r_types.hpp
 	${TREMGAME_DIR}/bgame/bgame_local.h
 	${TREMGAME_DIR}/cgame/cgame_local.h
-	${TREMGAME_DIR}/cgame/cgame_precompiled.h
+	${TREMGAME_DIR}/cgame/cgame_precompiled.hpp
 	${TREMGAME_DIR}/cgame/cgame_animation.h
 	${TREMGAME_DIR}/cgame/cgame_animmapobj.h
 	${TREMGAME_DIR}/cgame/cgame_attachment.h
@@ -389,7 +389,7 @@ if( MSVC )
 	SET_TARGET_PROPERTIES( cgame PROPERTIES LINK_FLAGS "/DEF:\"${TREMGAME_DIR}/cgame/cgame.def" )
 endif( MSVC )
 
-	target_precompile_headers( cgame PRIVATE "${TREMGAME_DIR}/cgame/cgame_precompiled.h" )
+	target_precompile_headers( cgame PRIVATE "${TREMGAME_DIR}/cgame/cgame_precompiled.hpp" )
 
 	TARGET_INCLUDE_DIRECTORIES( cgame PRIVATE ${MOUNT_DIR} ${TREMGAME_DIR} )
 	
@@ -418,7 +418,7 @@ if( MSVC )
 	SET_TARGET_PROPERTIES( gui PROPERTIES LINK_FLAGS "/DEF:\"${TREMGAME_DIR}/GUI/gui.def" )
 endif( MSVC )
 
-	target_precompile_headers( gui PRIVATE "${TREMGAME_DIR}/GUI/gui_precompiled.h" )
+	target_precompile_headers( gui PRIVATE "${TREMGAME_DIR}/GUI/gui_precompiled.hpp" )
 
 	TARGET_INCLUDE_DIRECTORIES( gui PRIVATE ${MOUNT_DIR} ${TREMGAME_DIR} )
 	

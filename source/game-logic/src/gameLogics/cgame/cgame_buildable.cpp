@@ -27,7 +27,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 
 valueType* cg_buildableSoundNames[ MAX_BUILDABLE_ANIMATIONS ] =
 {

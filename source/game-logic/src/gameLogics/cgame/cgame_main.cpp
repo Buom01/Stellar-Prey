@@ -28,7 +28,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 
 // display context for new ui stuff
 displayContextDef_t cgDC;

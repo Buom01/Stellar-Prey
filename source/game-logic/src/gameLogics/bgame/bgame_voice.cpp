@@ -30,11 +30,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 #ifdef CGAMEDLL
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 #elif GAMEDLL
 #include <sgame/sgame_precompiled.h>
 #else
-#include <GUI/gui_precompiled.h>
+#include <GUI/gui_precompiled.hpp>
 #endif // !GAMEDLL
 
 sint trap_FS_FOpenFile( pointer qpath, fileHandle_t* f, fsMode_t mode );

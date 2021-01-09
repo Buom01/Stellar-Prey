@@ -29,11 +29,11 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 #ifdef CGAMEDLL
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 #elif GAMEDLL
 #include <sgame/sgame_precompiled.h>
 #else
-#include <GUI/gui_precompiled.h>
+#include <GUI/gui_precompiled.hpp>
 #endif // !GAMEDLL
 
 #ifdef GAMEDLL

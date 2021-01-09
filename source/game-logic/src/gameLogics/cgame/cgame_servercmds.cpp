@@ -29,7 +29,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 
 extern sint sortedTeamPlayers[TEAM_MAXOVERLAY];
 extern sint numSortedTeamPlayers;

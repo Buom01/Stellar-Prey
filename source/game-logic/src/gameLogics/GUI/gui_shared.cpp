@@ -29,9 +29,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 #ifdef CGAMEDLL
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 #else
-#include <GUI/gui_precompiled.h>
+#include <GUI/gui_precompiled.hpp>
 #endif // !CGAMEDLL
 
 #define SCROLL_TIME_START         500

@@ -28,7 +28,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#include <cgame/cgame_precompiled.h>
+#include <cgame/cgame_precompiled.hpp>
 
 static baseTrailSystem_t baseTrailSystems[ MAX_BASETRAIL_SYSTEMS ];
 static baseTrailBeam_t baseTrailBeams[ MAX_BASETRAIL_BEAMS ];

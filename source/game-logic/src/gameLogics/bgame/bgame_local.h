@@ -32,7 +32,7 @@
 #define __BG_LOCAL_H__
 
 #ifndef __BG_API_H__
-#include <API/bgame_api.h>
+#include <API/bgame_api.hpp>
 #endif
 
 #define MIN_WALK_NORMAL 0.7f   // can't walk on very steep slopes
