@@ -168,7 +168,7 @@ set( SGAMELIST_HEADERS
 	${MOUNT_DIR}/API/CVarSystem_api.hpp
 	${MOUNT_DIR}/API/serverMain_api.hpp
 	${MOUNT_DIR}/API/Parse_api.hpp
-	${TREMGAME_DIR}/sgame/sgame_precompiled.h
+	${TREMGAME_DIR}/sgame/sgame_precompiled.hpp
 	${TREMGAME_DIR}/bgame/bgame_local.h
 	${MOUNT_DIR}/API/bgame_api.hpp
 	${TREMGAME_DIR}/sgame/sgame_admin.h
@@ -354,7 +354,7 @@ if( MSVC )
 	SET_TARGET_PROPERTIES( sgame PROPERTIES LINK_FLAGS "/DEF:\"${TREMGAME_DIR}/sgame/sgame.def" )
 endif( MSVC )
 
-	target_precompile_headers( sgame PRIVATE "${TREMGAME_DIR}/sgame/sgame_precompiled.h" )
+	target_precompile_headers( sgame PRIVATE "${TREMGAME_DIR}/sgame/sgame_precompiled.hpp" )
 
 find_package( Bullet REQUIRED )
 

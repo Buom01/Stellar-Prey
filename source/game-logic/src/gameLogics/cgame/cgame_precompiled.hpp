@@ -18,7 +18,7 @@
 // Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110 - 1301  USA
 //
 // -------------------------------------------------------------------------------------
-// File name:   cgame_precompiled.h
+// File name:   cgame_precompiled.hpp
 // Version:     v1.01
 // Created:
 // Compilers:   Visual Studio 2017, gcc 7.3.0
@@ -26,7 +26,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#ifndef __CG_PRECOMPILED_H__
+#ifndef __CG_PRECOMPILED_HPP__
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -106,4 +106,4 @@
 #include <cgame/cgame_view.h>
 #include <cgame/cgame_weapons.h>
 
-#endif // !__CG_PRECOMPILED_H__
+#endif // !__CG_PRECOMPILED_HPP__
