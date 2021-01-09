@@ -18,7 +18,7 @@
 // Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110 - 1301  USA
 //
 // -------------------------------------------------------------------------------------
-// File name:   sgame_precompiled.h
+// File name:   sgame_precompiled.hpp
 // Version:     v1.03
 // Created:
 // Compilers:   Visual Studio 2019, gcc 7.3.0
@@ -26,8 +26,8 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#ifndef __SGAME_PRECOMPILED_H__
-#define __SGAME_PRECOMPILED_H__
+#ifndef __SGAME_PRECOMPILED_HPP__
+#define __SGAME_PRECOMPILED_HPP__
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -108,4 +108,4 @@
 #include <sgame/sgame_active.h>
 #include <sgame/sgame_bulletphysics.h>
 
-#endif // !__SGAME_PRECOMPILED_H__
+#endif // !__SGAME_PRECOMPILED_HPP__

@@ -18,7 +18,7 @@
 // Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110 - 1301  USA
 //
 // -------------------------------------------------------------------------------------
-// File name:   cgame_precompiled.h
+// File name:   cgame_precompiled.hpp
 // Version:     v1.01
 // Created:
 // Compilers:   Visual Studio 2019, gcc 7.3.0
@@ -26,7 +26,7 @@
 // -------------------------------------------------------------------------------------
 ////////////////////////////////////////////////////////////////////////////////////////
 
-#ifndef __GUI_PRECOMPILED_H__
+#ifndef __GUI_PRECOMPILED_HPP__
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -79,4 +79,4 @@
 #include <GUI/gui_local.h>
 #include <API/gui_api.hpp>
 
-#endif // !__GUI_PRECOMPILED_H__
+#endif // !__GUI_PRECOMPILED_HPP__

@@ -33,7 +33,7 @@
 #ifdef CGAMEDLL
 #include <cgame/cgame_precompiled.hpp>
 #elif GAMEDLL
-#include <sgame/sgame_precompiled.h>
+#include <sgame/sgame_precompiled.hpp>
 #else
 #include <GUI/gui_precompiled.hpp>
 #endif // !GAMEDLL
