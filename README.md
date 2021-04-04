@@ -16,7 +16,7 @@ This is the main repo for STELLAR PREY™ game and can be used to build and pack
 * libfreetype6-dev
 * libgeoip-dev
 * libglew-dev
-* libjpeg-dev
+* libjpeg-turbo8-dev
 * libmysqlclient-dev
 * libncursesw5-dev
 * libogg-dev

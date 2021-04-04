@@ -13,7 +13,7 @@ RUN apt-get update && \
 		libfreetype6-dev \
 		libgeoip-dev \
 		libglew-dev \
-		libjpeg-dev \
+		libjpeg-turbo8-dev \
 		libmysqlclient-dev \
 		libncursesw5-dev \
 		libogg-dev \
